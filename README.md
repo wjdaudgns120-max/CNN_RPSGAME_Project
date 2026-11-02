@@ -5,6 +5,10 @@
 
 > 개인 프로젝트 (Solo Project, 2026.09)
 
+## System Overview
+
+![System Overview](docs/system_overview.png)
+
 ## 주요 기능
 
 - **손 탐지 + 제스처 분류**: 한 번의 추론으로 손 위치(바운딩 박스)와 클래스(`SCISSORS` / `ROCK` / `PAPER`)를 함께 출력

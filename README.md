@@ -1,7 +1,7 @@
 # CNN RPS Game: 실시간 가위바위보 대결
 
 웹캠 영상에서 **두 사람의 손을 동시에 탐지**하고, 각 손이 가위·바위·보 중 무엇인지 분류해서 **실시간으로 승패를 판정**하는 게임입니다.
-YOLO 계열 객체 탐지 모델을 **TFLite(LiteRT)** 로 변환해 `tflite_runtime`만으로 동작하도록 만들어, 가벼운 엣지 환경에서도 실행할 수 있습니다.
+**YOLO11n** 객체 탐지 모델을 학습해 **TFLite(LiteRT)** 로 변환하고 `tflite_runtime`만으로 동작하도록 만들어, 가벼운 엣지 환경에서도 실행할 수 있습니다.
 
 > 개인 프로젝트 (Solo Project, 2026.09)
 
@@ -60,9 +60,9 @@ python RPS_GAME.py
 | 파일 | 설명 |
 |---|---|
 | `RPS_GAME.py` | 추론, 후처리, 승패 판정, UI 전체 |
-| `best_float32.tflite` | 학습된 가위바위보 탐지 모델 (float32, 입력 320x320) |
+| `best_float32.tflite` | 학습된 YOLO11n 가위바위보 탐지 모델 (float32, 입력 320x320) |
 | `requirements.txt` | 실행 패키지 |
 
 ## 개발 환경
 
-Python, OpenCV, NumPy, TFLite Runtime (LiteRT), YOLO 계열 객체 탐지 모델
+Python, OpenCV, NumPy, TFLite Runtime (LiteRT), Ultralytics YOLO11n

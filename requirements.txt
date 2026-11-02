@@ -1,0 +1,3 @@
+tflite-runtime
+numpy
+opencv-python
